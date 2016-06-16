@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="socket.js"></script>
+	<title>WebChat</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="form">
+		<table>
+			<tr>
+				<td>
+					<label for="">Username</label>
+				</td>
+				<td>
+					<input id="user" type="text" name="user">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="">Send To</label>
+				</td>
+				<td>
+					<input id="to_send" type="text" name="to_send">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div id="msgc" class="msg_content">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input id="msg" type="text" name="msg" placeholder="Enter the message here." disabled="true">
+				</td>
+			</tr>
+		</table>
+		<div>
+			<a class="button bsend" href="javascript:send()"><strong>Send</strong></a>
+			<a class="button stat" href="javascript:close()"><strong>Desconnect</strong></a>
+			<a class="button stat" href="javascript:open()"><strong>Connect</strong></a>
+		</div>
+	</div>
+</body>
+</html>
